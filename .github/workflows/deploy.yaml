@@ -19,8 +19,8 @@ jobs:
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v18
         with:
-          application_name: docker-gh
-          environment_name: Dockergh-env
+          application_name: frontend1
+          environment_name: Frontend1-env
           existing_bucket_name: elasticbeanstalk-us-west-2-007246147243
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
